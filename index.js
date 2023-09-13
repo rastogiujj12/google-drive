@@ -197,7 +197,7 @@ module.exports = (credentials_path, token_path) => {
                      fileId: url.split('/')[5],
                      alt: 'media',
                   }, {
-                     responseType: "arraybuffer"
+                     responseType: "stream"
                   })
                   if (response.status != 200) return resolve({
                      creator: global.creator,
